@@ -65,9 +65,9 @@ Program ini dipisah ke dalam package sesuai konsep MVC (Model, View, Controller)
 
 7. Cari Surat
 
-    <img width="434" height="412" alt="image" src="https://github.com/user-attachments/assets/5f3adee7-ba6a-4a7c-afdf-74d90ea49025" />
+    <img width="335" height="446" alt="image" src="https://github.com/user-attachments/assets/f17447eb-b4d8-4833-b56f-89b33c842999" />
 
-   * User memasukkan nomor surat.
+   * User memilih ingin mencari surat berdasarkan nomor surat atau judul surat.
    * Jika ditemukan maka detail surat ditampilkan.
    * Jika tidak ada maka akan tampil pesan "Surat tidak ditemukan".
 
@@ -113,9 +113,9 @@ Contoh di SuratMasuk:
 Terjadi pada class Service di method pencarian surat yaitu terdapat dua versi method dengan nama sama tapi parameter berbeda:
 
   ```
-  public void cariSurat(String nomor) { ... }
-  public void cariSuratByJudul(String judul) { ... }
+  public void cariSurat(String nomorSurat) { ... }
+  public void cariSurat(String judulSurat, boolean byJudul) { ... }
   ```
 
-  * CariSurat(String nomor) digunakan untuk mencari berdasarkan nomor surat.
-  * CariSuratByJudul(String judul) digunakan untuk mencari berdasarkan judul surat.
+  * cariSurat(String nomor) digunakan untuk mencari berdasarkan nomor surat.
+  * cariSurat(String judulSurat, boolean byJudul) digunakan untuk mencari berdasarkan judul surat.
